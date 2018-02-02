@@ -1,0 +1,26 @@
+   #box2 {
+        width: 400px;
+        height: 400px;
+        background-color: #ffbf00;
+        position: absolute;
+        left: 30%;
+        top: 20%;
+         border-style: dotted;
+        border-width: 10px;
+    }
+
+
+ #box1 {
+        width: 400px;
+        height: 400px;
+        background-color: transparent;
+        position: relative;
+        left: 60%;
+        top: 20%;
+        border-style: dotted;
+        border-width: 10px;
+    }  
+    
+
+
+    

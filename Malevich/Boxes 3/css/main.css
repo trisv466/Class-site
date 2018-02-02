@@ -1,0 +1,42 @@
+ #box1 {
+        width: 200px;
+        height: 600px;
+        background-color: #0026ff;
+        position: fixed;
+        left: 20%;
+        top: -10%;
+        -ms-transform: rotate(-8deg); /* IE 9 */
+        -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+        transform: rotate(-8deg);
+        border-style: solid;
+    border-width: 10px;
+    }  
+    
+  #box2 {
+        width: 200px;
+        height: 600px;
+        background-color: #ff0000;
+        position: relative;
+        left: 37%;
+        top: -40%;
+        -ms-transform: rotate(-8deg); /* IE 9 */
+        -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+        transform: rotate(-8deg);
+        border-style: solid;
+    border-width: 10px;
+    }
+
+#box3 {
+        width: 200px;
+        height: 600px;
+        background-color: white;
+        position: static;
+        top: 50px;
+        -ms-transform: rotate(-8deg); /* IE 9 */
+        -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+        transform: rotate(-8deg);
+        border-style: solid;
+    border-width: 10px;
+    } 
+
+

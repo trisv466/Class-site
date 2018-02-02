@@ -1,0 +1,14 @@
+ #box1 {
+        width: 1200px;
+        height: 1200px;
+        background-color: white;
+        border: black;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }  
+    
+  
