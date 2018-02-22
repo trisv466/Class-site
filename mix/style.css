@@ -1,0 +1,143 @@
+
+
+#skip {
+	position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#granny {
+	position: absolute;
+    top: 50%;
+	left: 20%;
+	transform: translate(-50%,-50%);
+			    -webkit-animation:linear infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 11s;
+}     
+@-webkit-keyframes run {
+    0% { left: 0;}
+    50%{ left : 25%;}
+    100%{ left: 0;}
+}
+
+#grandpa {
+	position: absolute;
+    top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%);
+
+}
+
+#record {
+	position: absolute;
+    top: 30%;
+	left: 35%;
+	transform: translate(-50%,-50%);
+	width: 100px;
+animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 1s; 	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+	animation-iteration-count:infinite;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	50%{
+		-webkit-transform: translateY(8%);
+	}
+	65%{
+		-webkit-transform: translateY(-4%);
+	}
+	80%{
+		-webkit-transform: translateY(4%);
+	}
+	95%{
+		-webkit-transform: translateY(-2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+#cassette2{
+	position: absolute;
+    top: 72%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 225px;
+}
+
+#soundwaves {
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+#bg-color {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+#floor {
+	width: 100%;
+	height: 35%;
+	background-color: #565656;
+		position: absolute;
+    top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+#floor2 {
+	width: 100%;
+	height: 10%;
+	background-color: white;
+		position: absolute;
+    top: 98%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+#soundcloud {
+	position: absolute;
+	z-index: 9;
+	bottom: 15;
+}
