@@ -4,8 +4,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500" rel="stylesheet">
 </head>
 <body>
-<script src="script.js"></script>
 
+<div class="audio">
+	<audio controls loop controls autoplay id="audio" class="audio">
+  <source src="munch.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 	<div id="bg"></div>
 		<div id="pics"></div>
 	<div id="header">
@@ -20,12 +24,11 @@
 
 
 
-	<audio controls loop controls autoplay id="audio">
-  <source src="munch.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+	<div id="mutebutton"></div>
 
 
 
-</body>
+	<script src="script.js"></script>
+
+	</body>
 </html>

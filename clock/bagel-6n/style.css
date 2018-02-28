@@ -477,10 +477,11 @@
     transform: translate(-50%,-50%);
 }
 
-#audio {
-		position: absolute;
-	z-index: 9;
-	bottom: 50;
-	left: -14%;
+#mutebutton {
+	position: fixed;
+	top: 10%;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border-radius: 50%;
 }
-

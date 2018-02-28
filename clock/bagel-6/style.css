@@ -54,7 +54,7 @@
     transform: translate(-50%,-50%);
 }
 
-#pics {
+/*#pics {
 	width: 70%;
 	height: 90%;
 	background-size: contain;
@@ -442,6 +442,23 @@
 	100% {
 		background-image: url(59.png);
 	}
+}
+*/
+
+body {
+  background: #24aecd;
+}
+
+.bagelsprite {
+  width: 1920px;
+  height: 64800px;
+  margin: 2% auto;
+  background: url(bagelsprite.png) top center;
+  animation: play 1s steps(60) infinite;
+}
+
+@keyframes play {
+	100% { background-position: 50%; }
 }
 
 #bagelthumbnail {
