@@ -10,7 +10,7 @@
 	width: 100%;
 	height: 100%;
 	background-size: auto;
-	background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/bg4.jpeg);
+	background-image: url(../_assets/bg4.jpeg);
 	position: fixed;
 	left: 50%;
 	top: 50%;
@@ -152,7 +152,7 @@
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;  
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/bucket.png); 
+    background-image: url(../_assets/bucket.png); 
     background-size: cover;
 }
 
@@ -197,7 +197,7 @@
     transform: translate(-50%,-50%);
     z-index: 0.9;
 	background-size: cover;
-	background-image: url("file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/ribcage.png");
+	background-image: url("../_assets/ribcage.png");
 }
 
 /*.fixed-size-container {
@@ -262,7 +262,7 @@
 
 /* #ribcage {
  	background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/ribcage.png);
+    background-image: url(../_assets/ribcage.png);
     top: 40%;
     left: 40%;
     transform: translate(-50%,-50%);
@@ -270,7 +270,7 @@
 
  #hands {
  	background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/hands.png);
+    background-image: url(../_assets/hands.png);
     top: 10%;
     left: 60%;
     transform: translate(-50%,-50%);
@@ -280,7 +280,7 @@
 
 #blood {
  	background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/blood.png);
+    background-image: url(../_assets/blood.png);
      top: 60%;
     left: 85%;
     transform: translate(-50%,-50%);
@@ -289,7 +289,7 @@
 
  #finger {
  	background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/finger.png);
+    background-image: url(../_assets/finger.png);
      top: 30%;
     left: 25%;
     transform: translate(-50%,-50%);
@@ -297,7 +297,7 @@
 
  #heart {
  	background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/heart.png);
+    background-image: url(../_assets/heart.png);
      top: 40%;
     left: 40%;
     transform: translate(-50%,-50%);
@@ -305,7 +305,7 @@
 
 #ears {
  	background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/ears.png);
+    background-image: url(../_assets/ears.png);
      top: 50%;
     left: 23%;
     transform: translate(-50%,-50%);
@@ -313,7 +313,7 @@
 
  #foot {
  	background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/foot.png);
+    background-image: url(../_assets/foot.png);
      top: 90%;
     left: 10%;
     transform: translate(-50%,-50%);
@@ -321,7 +321,7 @@
 
  #brain {
  	background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/brain.png);
+    background-image: url(../_assets/brain.png);
      top: 30%;
     left: 55%;
     transform: translate(-50%,-50%);
@@ -329,7 +329,7 @@
 
  #liver {
  	background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/liver.png);
+    background-image: url(../_assets/liver.png);
      top: 60%;
     left: 40%;
     transform: translate(-50%,-50%);
@@ -337,7 +337,7 @@
 
 #bone {
  	background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/bone.png);
+    background-image: url(../_assets/bone.png);
     top: 68%;
     left: 65%;
     transform: translate(-50%,-50%);
@@ -345,7 +345,7 @@
 
  #anus {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/anus.png);
+    background-image: url(../_assets/anus.png);
     top: 77%;
     left: 40%;
     transform: translate(-50%,-50%);
@@ -355,7 +355,7 @@
 
  #arm {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/arm.png);
+    background-image: url(../_assets/arm.png);
     top: 65%;
     left: 10%;
     transform: translate(-50%,-50%);
@@ -363,7 +363,7 @@
 
  #eye {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/eye.png);
+    background-image: url(../_assets/eye.png);
     top: 17%;
     left: 40%;
     transform: translate(-50%,-50%);
@@ -371,7 +371,7 @@
 
  #fetus {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/fetus.png);
+    background-image: url(../_assets/fetus.png);
     top: 82%;
     left: 65%;
     transform: translate(-50%,-50%);
@@ -381,7 +381,7 @@
 
  #genitals {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/genitals.png);
+    background-image: url(../_assets/genitals.png);
     top: 30%;
     left: 77%;
     transform: translate(-50%,-50%);
@@ -391,7 +391,7 @@
 
  #intestines {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/intestines.png);
+    background-image: url(../_assets/intestines.png);
     top: 95%;
     left: 27%;
     transform: translate(-50%,-50%);
@@ -401,7 +401,7 @@
 
   #leg {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/leg.png);
+    background-image: url(../_assets/leg.png);
     top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -411,7 +411,7 @@
 
   #lungs {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/lungs.png);
+    background-image: url(../_assets/lungs.png);
     top: 10%;
     left: 15%;
     transform: translate(-50%,-50%);
@@ -421,7 +421,7 @@
 
   #mouth {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/mouth.png);
+    background-image: url(../_assets/mouth.png);
     top: 50%;
     left: 60%;
     transform: translate(-50%,-50%);
@@ -429,7 +429,7 @@
 
 #stomach {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/stomach.png);
+    background-image: url(../_assets/stomach.png);
     top: 90%;
     left: 80%;
     transform: translate(-50%,-50%);
@@ -439,7 +439,7 @@
 
   #teeth {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/teeth.png);
+    background-image: url(../_assets/teeth.png);
     top: 3%;
     left: 40%;
     transform: translate(-50%,-50%);
@@ -449,7 +449,7 @@
 
   #womb {
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/womb.png);
+    background-image: url(../_assets/womb.png);
     top: 10%;
     left: 80%;
     transform: translate(-50%,-50%);
@@ -476,7 +476,7 @@
     width: 150px;
     height: 150px;
     background-size: cover;
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/m1.png);
+    background-image: url(../_assets/m1.png);
     top: 10%;
     left: 10%;
     transform: translate(-50%,-50%);    
