@@ -10,7 +10,7 @@
 	width: 100%;
 	height: 100%;
 	background-size: auto;
-	background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/bg4.jpeg);
+	background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/bg.jpg);
 	position: fixed;
 	left: 50%;
 	top: 50%;
@@ -25,19 +25,18 @@
     left: 50%;
     transform: translate(-50%,-50%);
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     padding: 10px;
     background-color: white;
 }
 
 #instructions {
-     font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 20px;
     color: #333333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     text-align: center;
     height: auto;
     width: 352.5px;
@@ -48,18 +47,17 @@
 }
 
 #close {
-         font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+   font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 25px;
+    font-size: 15px;
+    letter-spacing: 5px;
     color: gray;
     text-align: center;
     height: auto;
     width: 130px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: gray;
     position: fixed;
     top: 70%;
@@ -77,9 +75,7 @@
     background-color: white;
     border-style: solid;
     border-width: 2px;
-    font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
     font-size: 10px;
@@ -89,10 +85,31 @@
         text-transform: uppercase;
 }
 
+#pagetab {
+    position: fixed;
+    left: 20%;
+    top: 8%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#pagetabwhitecover {
+    position: fixed;
+    left: 20%;
+    top: 11.1%;
+    transform: translate(-50%,-50%);
+    width: 252.5px;
+    height: 18px;
+    background-color: white;
+}
+
 .headings {
-    font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
     font-size: 10px;
@@ -147,42 +164,44 @@
 
 .bucket {
     position: fixed;
-    left: 15%;
-    top: 50%;
+    left: 10%;
+    top: 40%;
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;  
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/bucket.png); 
+    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/bucket3.png); 
     background-size: cover;
+    transform: rotate(-15deg);
 }
 
 #secondbucket {
         position: fixed;
-    left: 85%;
-    top: 50%;
+    left: 80%;
+    top: 40%;
     transform: translate(-50%,-50%);
+        transform: rotate(15deg);
 }
 
 .bucketlabels {
     position: fixed;
-    left: 15%;
-    top: 68%;
+    left: 17%;
+    top: 81%;
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;
-        font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
     font-weight: bold;
     font-style: normal;
-    font-size: 17px;
+    font-size: 13px;
     text-align: center;
 }
 
 #secondbucketlabel {
     position: fixed;
-    left: 85%;
-    top: 68%;
+    left: 83%;
+    top: 81%;
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;  
@@ -219,18 +238,18 @@
     }*/
 .fixed-size-container {
     position: absolute;
-    left: 50%;
+    left: 40%;
     top: 60%;
     transform: translate(-50%,-50%);
-    width: 600px;
-    height: 600px;
+    width: 1100px;
+    height: 800px;
 /*    border-style: solid;
     border-color: black;*/
 }
 .fixed-size {
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 300px;
+    height: 300px;
 /*    display: flex;*/
 /*    margin: 5px;*/
 /*    width: 180px;
@@ -271,7 +290,7 @@
  #hands {
  	background-size: cover;
     background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/hands.png);
-    top: 10%;
+    top: 13%;
     left: 60%;
     transform: translate(-50%,-50%);
     width: 120px;
@@ -282,7 +301,7 @@
  	background-size: cover;
     background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/blood.png);
      top: 60%;
-    left: 85%;
+    left: 80%;
     transform: translate(-50%,-50%);
  }
 
@@ -314,9 +333,11 @@
  #foot {
  	background-size: cover;
     background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/foot.png);
-     top: 90%;
-    left: 10%;
+     top: 80%;
+    left: 50%;
     transform: translate(-50%,-50%);
+    width: 180px;
+    height: 180px;
  }
 
  #brain {
@@ -347,7 +368,7 @@
     background-size: cover;
     background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/anus.png);
     top: 77%;
-    left: 40%;
+    left: 35%;
     transform: translate(-50%,-50%);
     width: 100px;
     height: 100px;
@@ -356,9 +377,12 @@
  #arm {
     background-size: cover;
     background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/arm.png);
-    top: 65%;
+    top: 60%;
     left: 10%;
     transform: translate(-50%,-50%);
+    transform: rotate(-30deg);
+        width: 200px;
+    height: 200px;
  }
 
  #eye {
@@ -382,11 +406,11 @@
  #genitals {
     background-size: cover;
     background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/genitals.png);
-    top: 30%;
-    left: 77%;
+    top: 35%;
+    left: 70%;
     transform: translate(-50%,-50%);
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
  }
 
  #intestines {
@@ -440,8 +464,8 @@
   #teeth {
     background-size: cover;
     background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/teeth.png);
-    top: 3%;
-    left: 40%;
+    top: 13%;
+    left: 25%;
     transform: translate(-50%,-50%);
     width: 120px;
     height: 120px;
@@ -495,3 +519,57 @@
 li a:hover:after {
   content: ' (drag me)';
 }
+
+#title {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    color: #333333;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    position: fixed;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%,-50%); 
+}
+
+#description {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    color: #333333;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    text-align: justify;
+    height: auto;
+    width: 200px;
+    position: fixed;
+    top: 47%;
+    left: 80%;
+    transform: translate(-50%,-50%); 
+}
+
+#go {
+        font-family: 'Playfair Display', serif;
+    font-style: normal;
+    color: #333333;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    height: auto;
+    width: 80px;
+    position: fixed;
+    top: 62%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px; 
+    color: gray;
+    border-color: gray;
+}
+

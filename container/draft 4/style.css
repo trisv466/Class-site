@@ -25,19 +25,18 @@
     left: 50%;
     transform: translate(-50%,-50%);
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     padding: 10px;
     background-color: white;
 }
 
 #instructions {
-     font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 20px;
     color: #333333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     text-align: center;
     height: auto;
     width: 352.5px;
@@ -48,18 +47,17 @@
 }
 
 #close {
-         font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+   font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 25px;
+    font-size: 15px;
+    letter-spacing: 5px;
     color: gray;
     text-align: center;
     height: auto;
     width: 130px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: gray;
     position: fixed;
     top: 70%;
@@ -77,9 +75,7 @@
     background-color: white;
     border-style: solid;
     border-width: 2px;
-    font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
     font-size: 10px;
@@ -89,10 +85,31 @@
         text-transform: uppercase;
 }
 
+#pagetab {
+    position: fixed;
+    left: 20%;
+    top: 8%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#pagetabwhitecover {
+    position: fixed;
+    left: 20%;
+    top: 11.1%;
+    transform: translate(-50%,-50%);
+    width: 252.5px;
+    height: 18px;
+    background-color: white;
+}
+
 .headings {
-    font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
     font-size: 10px;
@@ -147,20 +164,22 @@
 
 .bucket {
     position: fixed;
-    left: 15%;
-    top: 50%;
+    left: 10%;
+    top: 40%;
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;  
-    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/bucket.png); 
+    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/container/_assets/envelope.png); 
     background-size: cover;
+    transform: rotate(-15deg);
 }
 
 #secondbucket {
         position: fixed;
-    left: 85%;
-    top: 50%;
+    left: 80%;
+    top: 40%;
     transform: translate(-50%,-50%);
+        transform: rotate(15deg);
 }
 
 .bucketlabels {
@@ -170,12 +189,12 @@
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;
-        font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
     font-weight: bold;
     font-style: normal;
-    font-size: 17px;
+    font-size: 13px;
     text-align: center;
 }
 

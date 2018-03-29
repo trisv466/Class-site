@@ -25,19 +25,18 @@
     left: 50%;
     transform: translate(-50%,-50%);
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     padding: 10px;
     background-color: white;
 }
 
 #instructions {
-     font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 20px;
     color: #333333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     text-align: center;
     height: auto;
     width: 352.5px;
@@ -48,18 +47,17 @@
 }
 
 #close {
-         font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+   font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 25px;
+    font-size: 15px;
+    letter-spacing: 5px;
     color: gray;
     text-align: center;
     height: auto;
     width: 130px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: gray;
     position: fixed;
     top: 70%;
@@ -77,9 +75,7 @@
     background-color: white;
     border-style: solid;
     border-width: 2px;
-    font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
     font-size: 10px;
@@ -90,9 +86,7 @@
 }
 
 .headings {
-    font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: normal;
     font-size: 10px;
@@ -115,6 +109,7 @@
     left: 20%;
     top: 70%;
     transform: translate(-50%,-50%);
+    color: #e78aa9;
 }
 
 #m-s {
@@ -166,13 +161,16 @@
 .bucketlabels {
     position: fixed;
     left: 15%;
-    top: 68%;
+    top: 75%;
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;
-        font-family: 'Helvetica';
-    src: url('Helvetica-Bold.woff2') format('woff2'),
-        url('Helvetica-Bold.woff') format('woff');
+font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #333333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     font-weight: bold;
     font-style: normal;
     font-size: 17px;
@@ -182,7 +180,7 @@
 #secondbucketlabel {
     position: fixed;
     left: 85%;
-    top: 68%;
+    top: 75%;
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;  
