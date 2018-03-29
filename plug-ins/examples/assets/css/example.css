@@ -1,0 +1,102 @@
+body {
+    font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
+    color: white;
+    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/plug-ins/examples/assets/img/bg.jpg);
+}
+
+.page-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+/*    border-left: 1px solid #EFEFEF;
+    border-right: 1px solid #EFEFEF;*/
+    padding: 15px;
+    background: transparent;
+}
+
+#h1 {
+    position: fixed;
+    left: 5%;
+    top: 40%;
+    transform: translate(-50%-50%);
+    width: 300px;
+    height: auto;
+    font-size: 45px;
+    text-align: left;
+    line-height: 40px;
+        text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+button.btn {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background: none;
+    color: cornflowerblue;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    padding: 10px;
+    border: 1px solid cornflowerblue;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.btn:hover {
+    background: cornflowerblue;
+    color: white;
+}
+
+button.btn::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 30px 15px 15px 15px;
+}
+
+a {
+    color: cornflowerblue;
+}
+
+.images-compare-label {
+        font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
+}
+
+#cream {
+       position: fixed;
+    left: 75%;
+    top: 35%;
+    transform: translate(-50%-50%);
+    width: 350px;
+    height: 350px; 
+    background-size: cover;
+    background-image: url(file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/plug-ins/examples/assets/img/cream.png);
+}
+
+#caption {
+       position: fixed;
+    left: 35%;
+    top: 85%;
+    transform: translate(-50%-50%);
+    width: 400px;
+    height: 350px;  
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: white;
+        font-size: 17px;
+}
+
+.js-img-compare {
+    position: fixed;
+}
+

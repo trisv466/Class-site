@@ -1,0 +1,112 @@
+
+
+    
+/* row 4*/   
+
+.fixed-size-container {
+    display: flex;
+    margin: 10px auto 0 auto;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 1300px;
+    height: auto;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+/*  flex-direction: row-reverse;
+    flex-direction: column;
+    */   
+    }
+    
+.fixed-size {
+    display: flex;
+    margin: 5px 0;
+    width: 180px;
+    height: 100px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 50px; 
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    color: white;
+    }
+
+.fixed-day {
+    display: flex;
+    margin: 5px 0;
+    width: 180px;
+    height: 100px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 50px; 
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: 'Helvetica';
+    src: url('Helvetica-Bold.woff2') format('woff2'),
+        url('Helvetica-Bold.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+    color: white;
+    }
+
+.fixed-blank {
+    display: flex;
+    margin: 3px 0;
+    width: 360px;
+    height: 100px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 60px; 
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    }
+
+#bg {
+   background-image: url("file:///Users/valerietrisnadi/Documents/Core%20Studio%20Interaction/Class-site/flex/bg.png");
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+    width: 300%;
+    height: 100%;
+}
+
+#whiteblock {
+    background-color: white;
+    position: fixed;
+    width: 1500px;
+    height: 80px;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%,-50%); 
+}
+
+
+#may {
+        font-family: 'Helvetica';
+    src: url('Helvetica-Bold.woff2') format('woff2'),
+        url('Helvetica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    font-size: 40px;
+        position: fixed;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+}
