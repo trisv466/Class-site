@@ -1,179 +1,123 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset=utf-8>
-<meta name="viewport" content="width=device-width">
-<title>HTML5 Demo: Drag and drop</title>
-<link rel="stylesheet" href="html5demos.css">
-<script src="h5utils.js"></script></head>
-<body>
-<section id="wrapper">
-<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=html5demoscom" id="_carbonads_js"></script>
-    <header>
-      <h1>Drag and drop</h1>
-    </header>
 
-<style type="text/css">
-li {
-  list-style: none;
-}
+<title>A jQuery Drag-and-Drop Number Cards Game</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
 
-li a {
-  text-decoration: none;
-  color: #000;
-  margin: 10px;
-  width: 150px;
-  border: 3px dashed #999;
-  background: #eee;
-  padding: 10px;
-  display: block;
-}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script type="text/javascript">
 
-*[draggable=true] {
-  -moz-user-select:none;
-  -khtml-user-drag: element;
-  cursor: move;
-}
+var correctCards = 0;
+$( init );
 
-*:-khtml-drag {
-  background-color: rgba(238,238,238, 0.5);
-}
+function init() {
 
-li a:hover:after {
-  content: ' (drag me)';
-}
+  // Hide the success message
+  $('#successMessage').hide();
+  $('#successMessage').css( {
+    left: '580px',
+    top: '250px',
+    width: 0,
+    height: 0
+  } );
 
-ul {
-  margin-left: 200px;
-  min-height: 300px;
-}
+  // Reset the game
+  correctCards = 0;
+  $('#cardPile').html( '' );
+  $('#cardSlots').html( '' );
 
-li.over {
-  border-color: #333;
-  background: #ccc;
-}
+  // Create the pile of shuffled cards
+  var numbers = [ 1, 1, 2, 2, 1, 1, 2, 2, 1, 1 ];
+  var terms = ['brain', 'leg', 'arm', 'eye', 'bone', 'liver', 'heart', 'intestine', 'stomach', 'lungs' ];
 
-#bin {
-  background: url(images/bin.jpg) top right no-repeat;
-  height: 250px;
-  width: 166px;
-  float: left;
-  border: 5px solid #000;
-  position: relative;
-  margin-top: 0;
-}
+  <!--numbers.sort( function() { return Math.random() - .5 } );-->
 
-#bin.over {
-  background: url(images/bin.jpg) top left no-repeat;
-}
-
-#bin p {
-  font-weight: bold;
-  text-align: center;
-  position: absolute;
-  bottom: 20px;
-  width: 166px;
-  font-size: 32px;
-  color: #fff;
-  text-shadow: #000 2px 2px 2px;
-}
-</style>
-<article>
-  <p>Drag the list items over the dustbin, and drop them to have the bin eat the item</p>
-  <div id="bin"></div>
-  <ul>
-    <li><a id="one" href="#">one</a></li>
-    <li><a href="#" id="two">two</a></li>
-    <li><a href="#" id="three">three</a></li>
-    <li><a href="#" id="four">four</a></li>
-    <li><a href="#" id="five">five</a></li>
-  </ul>
-</article>
-  <script>
-
-  var eat = ['yum!', 'gulp', 'burp!', 'nom'];
-  var yum = document.createElement('p');
-  var msie = /*@cc_on!@*/0;
-  yum.style.opacity = 1;
-
-  var links = document.querySelectorAll('li > a'), el = null;
-  for (var i = 0; i < links.length; i++) {
-    el = links[i];
-  
-    el.setAttribute('draggable', 'true');
-  
-    addEvent(el, 'dragstart', function (e) {
-      e.dataTransfer.effectAllowed = 'copy'; // only dropEffect='copy' will be dropable
-      e.dataTransfer.setData('Text', this.id); // required otherwise doesn't work
-    });
+  for ( var i=0; i<10; i++ ) {
+    $('<div>' + terms[i] + '</div>').data( 'number', numbers[i] ).attr( 'id', 'card'+numbers[i] ).appendTo( '#cardPile' ).draggable( {
+      
+      stack: '#cardPile div',
+      cursor: 'move',
+      revert: true
+    } );
   }
 
-  var bin = document.querySelector('#bin');
+  //   if ( terms == 'brain' ) {
+  //   ui.draggable.addClass( 'brain' );
+  // } 
 
-  addEvent(bin, 'dragover', function (e) {
-    if (e.preventDefault) e.preventDefault(); // allows us to drop
-    this.className = 'over';
-    e.dataTransfer.dropEffect = 'copy';
-    return false;
-  });
 
-  // to get IE to work
-  addEvent(bin, 'dragenter', function (e) {
-    this.className = 'over';
-    return false;
-  });
 
-  addEvent(bin, 'dragleave', function () {
-    this.className = '';
-  });
+  // Create the card slots
+  var bucket = [ 'external', 'internal'];
+  for ( var i=1; i<=2; i++ ) {
+    $('<div>' + bucket[i-1] + '</div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
+      accept: '#cardPile div',
+      hoverClass: 'hovered',
+      drop: handleCardDrop
+    } );
+  }
 
-  addEvent(bin, 'drop', function (e) {
-    if (e.stopPropagation) e.stopPropagation(); // stops the browser from redirecting...why???
+}
 
-    var el = document.getElementById(e.dataTransfer.getData('Text'));
-    
-    el.parentNode.removeChild(el);
+function handleCardDrop( event, ui ) {
+  var slotNumber = $(this).data( 'number' );
+  var cardNumber = ui.draggable.data( 'number' );
 
-    // stupid nom text + fade effect
-    bin.className = '';
-    yum.innerHTML = eat[parseInt(Math.random() * eat.length)];
+  // If the card was dropped to the correct slot,
+  // change the card colour, position it directly
+  // on top of the slot, and prevent it being dragged
+  // again
 
-    var y = yum.cloneNode(true);
-    bin.appendChild(y);
+  if ( slotNumber == cardNumber ) {
+    ui.draggable.addClass( 'correct' );
+    ui.draggable.draggable( 'disable' ); //prevent correct card from being redragged
+    // $(this).droppable( 'disable' ); //prevents more than one card from being dropped into same bucket
+    ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
+    ui.draggable.draggable( 'option', 'revert', false );
+    correctCards++;
+  } 
+  
+  // If all the cards have been placed correctly then display a message
+  // and reset the cards for another go
 
-    setTimeout(function () {
-      var t = setInterval(function () {
-        if (y.style.opacity <= 0) {
-          if (msie) { // don't bother with the animation
-            y.style.display = 'none';
-          }
-          clearInterval(t); 
-        } else {
-          y.style.opacity -= 0.1;
-        }
-      }, 50);
-    }, 250);
+  if ( correctCards == 10 ) {
+    $('#successMessage').show();
+    $('#successMessage').animate( {
+      left: '380px',
+      top: '200px',
+      width: '400px',
+      height: '100px',
+      opacity: 1
+    } );
+  }
 
-    return false;
-  });
+}
 
-  </script>
-<a id="html5badge" href="http://www.w3.org/html/logo/">
-<img src="https://www.w3.org/html/logo/badge/html5-badge-h-connectivity-device-graphics-multimedia-performance-semantics-storage.png" width="325" height="64" alt="HTML5 Powered with Connectivity / Realtime, Device Access, Graphics, 3D &amp; Effects, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage" title="HTML5 Powered with Connectivity / Realtime, Device Access, Graphics, 3D &amp; Effects, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage">
-</a>
-    <footer><a href="/">HTML5 demos</a>/<a id="built" href="http://twitter.com/rem">@rem built this</a>/<a href="#view-source">view source</a></footer>
-</section>
-<a id="forkme" href="http://github.com/remy/html5demos"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-<script src="/js/prettify.packed.js"></script>
-<script>
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
-<script>
-try {
-var pageTracker = _gat._getTracker("UA-1656750-18");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+
+</head>
+<body>
+
+
+
+<div id="content">
+
+  <div id="cardPile"> </div>
+  <div id="cardSlots"> </div>
+
+  <div id="successMessage">
+    <h2>Congratulations!</h2>
+    <button onclick="init()">Play Again</button>
+  </div>
+
+</div>
+
+
+
 </body>
 </html>
+

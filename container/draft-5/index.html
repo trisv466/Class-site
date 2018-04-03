@@ -36,6 +36,7 @@
 <div class="bucketlabels"> External </div>
 <div class="bucketlabels" id="secondbucketlabel"> Internal </div>
 
+
 <div class="fixed-size-container">
    <div class="fixed-size" id="ribcage"></div>
     <div class="fixed-size" id="hands"></div>
@@ -44,7 +45,7 @@
      <div class="fixed-size" id="heart"></div>
     <div class="fixed-size" id="ears"></div>
      <div class="fixed-size" id="foot"></div>
-     <div class="fixed-size" id="brain"></div>
+     <div class="fixed-size" id="brain" draggable="true" ondragstart="drag(event)"></div>
     <div class="fixed-size" id="liver"></div>
      <div class="fixed-size" id="bone"></div>
 
@@ -67,6 +68,8 @@
     <div id="instructions"> Drag each body part into the category it belongs to! </div>
     <div id="close" onclick="document.getElementById('pop').style.display='none'"> OKAY </div><br>
 </div>
+
+<div id="dragarea" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 <!-- <div id="pagemarkers">
     <div id="m1"></div>

@@ -1,0 +1,285 @@
+body {
+  background-image: url(../_assets/bg5.jpg);
+
+}
+
+
+
+
+.headings {
+font-family: 'Nunito', sans-serif;
+    color: #333333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    height: auto;
+    width: 352.5px;
+}
+
+#external-internal {
+	    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#external-internal:hover
+{
+    animation-name: changecolor;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes changecolor {
+	0% {
+		color: #ffafaf;
+	}
+	100% {
+		color: #ffafaf;
+	}
+}
+
+#paper1 {
+	background-image: url(../_assets/p2.png);
+	background-size: cover;
+	    height: 90px;
+    width: 352.5px;
+    position: fixed;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%,-50%);  
+
+}
+#paper1:hover
+{
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes shake {
+	0% {
+		top: 30%;
+		left: 45%;
+	}
+	50% {
+		top: 30.5%;
+		left: 45.5%;
+	}
+	75% {
+		top: 30%;
+		left: 45.5%;
+	}
+
+		100% {
+		top: 30%;
+		left: 45%;
+	}
+}
+
+#motor-static {
+	    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+#motor-static:hover
+{
+    animation-name: changecolortwo;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes changecolortwo {
+	0% {
+		color: #ffafaf;
+	}
+	100% {
+		color: #ffafaf;
+	}
+}
+
+
+#paper2 {
+	background-image: url(../_assets/p3.png);
+	background-size: cover;
+	    height: 90px;
+    width: 352.5px;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%,-50%);  
+}
+
+#paper2:hover
+{
+    animation-name: shaketwo;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes shaketwo {
+	0% {
+		top: 45%;
+		left: 45%;
+	}
+	50% {
+		top: 45.5%;
+		left: 45.5%;
+	}
+	75% {
+		top: 45%;
+		left: 45.5%;
+	}
+
+		100% {
+		top: 45%;
+		left: 45%;
+	}
+}
+
+
+#sensory-nonsensory {
+	    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+
+#sensory-nonsensory:hover
+{
+    animation-name: changecolorthree;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes changecolorthree {
+	0% {
+		color: #ffafaf;
+	}
+	100% {
+		color: #ffafaf;
+	}
+}
+
+#paper3 {
+	background-image: url(../_assets/p1.png);
+	background-size: cover;
+	    height: 90px;
+    width: 352.5px;
+    position: fixed;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%,-50%);  
+
+}
+
+#paper3:hover
+{
+    animation-name: shakethree;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes shakethree {
+	0% {
+		top: 60%;
+		left: 45%;
+	}
+	50% {
+		top: 60.5%;
+		left: 45.5%;
+	}
+	75% {
+		top: 60%;
+		left: 45.5%;
+	}
+
+		100% {
+		top: 60%;
+		left: 45%;
+	}
+}
+
+
+#nervous-nerveless {
+	    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+
+#nervous-nerveless:hover
+{
+    animation-name: changecolorfour;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes changecolorfour {
+	0% {
+		color: #ffafaf;
+	}
+	100% {
+		color: #ffafaf;
+	}
+}
+
+#paper4 {
+	background-image: url(../_assets/p4.png);
+	background-size: cover;
+	    height: 90px;
+    width: 352.5px;
+    position: fixed;
+    top: 75%;
+    left: 45%;
+    transform: translate(-50%,-50%);  
+
+}
+
+#paper4:hover
+{
+    animation-name: shakefour;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes shakefour {
+	0% {
+		top: 75%;
+		left: 45%;
+	}
+	50% {
+		top: 75.5%;
+		left: 45.5%;
+	}
+	75% {
+		top: 75%;
+		left: 45.5%;
+	}
+
+		100% {
+		top: 75%;
+		left: 45%;
+	}
+}
+
+
+#description {
+font-family: 'Work Sans', sans-serif;
+    color: #7f7f7f;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 23px;
+    font-size: 12px;
+    text-align: left;
+    height: auto;
+    width: 300px;
+        position: fixed;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%); 
+}
+
+
+

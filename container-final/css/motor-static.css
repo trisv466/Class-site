@@ -1,0 +1,757 @@
+/*.container {
+  width: 65%;
+  height: 500px;
+  border: 2px solid silver;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 50px;
+}*/
+
+body {
+  background-image: url(../_assets/bg5.jpg);
+
+}
+
+#pop {
+    height: 230px;
+    width: 470px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+/*    border-style: solid;*/
+    border-radius: 15px;
+/*    border-width: 5px;*/
+    padding: 10px;
+    background-color: white;
+        box-shadow: 5px 5px 20px #c4c4c4;
+}
+
+
+#instructions {
+font-family: 'Nunito', sans-serif;
+    color: #333333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    height: auto;
+    width: 352.5px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+
+#close {
+/*font-family: 'Nunito', sans-serif;
+    color: #333333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: gray;
+    text-align: center;
+    height: auto;
+    width: 130px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;*/
+    position: fixed;
+    font-size: 12px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+
+#external {
+font-family: 'Nunito', sans-serif;
+    color: #333333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    height: auto;
+    width: 352.5px;
+    position: fixed;
+    font-size: 12px;
+  left: 88%;
+  top: 29%;
+    transform: translate(-50%,-50%);
+}
+
+#internal {
+font-family: 'Nunito', sans-serif;
+    color: #333333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    height: auto;
+    width: 352.5px;
+    position: fixed;
+    font-size: 12px;
+  left: 88%;
+  top: 70%;
+    transform: translate(-50%,-50%);
+}
+
+
+.draggableList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.droppableList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.drapCircle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  border: 1px solid silver;
+  margin: 0 auto;
+}
+
+
+
+.dropable {
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+    position: absolute;
+  left: 80%;
+  top: 20%;
+  background-image: url(../_assets/tick.png);
+background-size: cover;
+}
+
+.dropable2 {
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+    position: absolute;
+  left: 80%;
+  top: 60%;
+  background-image: url(../_assets/tick.png);
+background-size: cover;
+}
+
+#bucket {
+   width: 200px;
+  height: 200px;
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+    position: fixed;
+  left: 80%;
+  top: 20%;
+  background-image: url(../_assets/bucket3.png);
+background-size: cover; 
+}
+
+#bucket2 {
+   width: 200px;
+  height: 200px;
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+    position: fixed;
+  left: 80%;
+  top: 60%;
+  background-image: url(../_assets/bucket4.png);
+background-size: cover; 
+}
+
+/*#dropableTwoHands {
+  background-image: 
+}
+
+#dropableTwoFinger */
+
+
+.feedback {
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  list-style: none;
+  display: inline-block;
+}
+
+.dropable header {
+  padding: 5px 0px 5px 0px;
+  border-bottom: 2px solid silver;
+}
+
+.fixed-size-container {
+    position: fixed;
+    left: 37%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 90%;
+/*    border-style: solid;*/
+/*    border-width: 5px;*/
+  }
+
+
+
+
+.draggable {
+    width: 5%;
+  height: 5%;
+  left: 20%;
+  top: 10%;
+    transform: translate(-50%,-50%);
+  background-size: cover;
+   position: fixed;
+    width: 180px;
+    height: 180px;
+  list-style: none;
+  display: inline-block;
+}
+
+/*EXTERNAL PARTS*/
+
+#draggableOneHands {
+background-image: url(../_assets/hands.png);
+background-size: cover;
+    top: 67%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+}
+
+#draggableOneFinger {
+background-image: url(../_assets/finger.png);
+background-size: cover;
+     top: 30%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+
+#draggableOneGenitals {
+background-image: url(../_assets/genitals.png);
+background-size: cover;
+    top: 30%;
+    left: 77%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableOneEars {
+background-image: url(../_assets/ears.png);
+background-size: cover;
+     top: 50%;
+    left: 23%;
+    transform: translate(-50%,-50%);
+}
+
+#draggableOneMouth {
+background-image: url(../_assets/mouth.png);
+background-size: cover;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}
+
+#draggableOneArm {
+background-image: url(../_assets/arm.png);
+background-size: cover;
+    top: 65%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+}
+
+#draggableOneAnus {
+background-image: url(../_assets/anus.png);
+background-size: cover;
+    top: 77%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+}
+
+#draggableOneLeg {
+background-image: url(../_assets/leg.png);
+background-size: cover;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+}
+
+#draggableOneFoot {
+background-image: url(../_assets/foot.png);
+background-size: cover;
+     top: 90%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+}
+
+#draggableOneEye {
+background-image: url(../_assets/eye.png);
+background-size: cover;
+    top: 17%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+
+#draggableTwoBone {
+background-image: url(../_assets/bone.png);
+background-size: cover;
+    top: 68%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+}
+
+
+#draggableOneNails {
+background-image: url(../_assets/nails.png);
+background-size: cover;
+     top: 45%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableOneHair {
+background-image: url(../_assets/hair.png);
+background-size: cover;
+     top: 15%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+}
+
+#draggableOneNipples {
+background-image: url(../_assets/nipples.png);
+background-size: cover;
+     top: 3%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableOneBreasts {
+background-image: url(../_assets/breasts.png);
+background-size: cover;
+     top: 25%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    width: 180px;
+    height: 180px;
+}
+
+#draggableOneToes {
+background-image: url(../_assets/toes.png);
+background-size: cover;
+     top: 45%;
+    left: 73%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableOneNose {
+background-image: url(../_assets/nose.png);
+background-size: cover;
+     top: 57%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableOneNeck {
+background-image: url(../_assets/neck.png);
+background-size: cover;
+     top: 13%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    width: 160px;
+    height: 160px;
+
+}
+
+#draggableOneKnees {
+background-image: url(../_assets/knees.png);
+background-size: cover;
+     top: 73%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+
+}
+
+#draggableOneElbow {
+background-image: url(../_assets/elbow.png);
+background-size: cover;
+     top: 40%;
+    left: 87%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableOneShoulder {
+background-image: url(../_assets/shoulder.png);
+background-size: cover;
+     top: 23%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    width: 140px;
+    height: 140px;
+}
+
+#draggableOneThigh {
+background-image: url(../_assets/thigh.png);
+background-size: cover;
+     top: 75%;
+    left: 78%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+}
+
+#draggableOneBellybutton {
+background-image: url(../_assets/bellybutton.png);
+background-size: cover;
+     top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+/*INTERNAL PARTS*/
+
+#draggableTwoLungs {
+background-image: url(../_assets/lungs.png);
+background-size: cover;
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableTwoTeeth {
+background-image: url(../_assets/teeth.png);
+background-size: cover;
+    top: 3%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableTwoWomb {
+background-image: url(../_assets/womb.png);
+background-size: cover;
+    top: 5%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableTwoBrain {
+background-image: url(../_assets/brain.png);
+background-size: cover;
+     top: 30%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+        width: 190px;
+    height: 190px;
+}
+
+#draggableTwoHeart {
+background-image: url(../_assets/heart.png);
+background-size: cover;
+     top: 40%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+}
+
+#draggableTwoLiver {
+background-image: url(../_assets/liver.png);
+background-size: cover;
+     top: 57%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+}
+
+#draggableTwoBlood {
+background-image: url(../_assets/blood.png);
+background-size: cover;
+     top: 60%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+
+#draggableTwoIntestines {
+background-image: url(../_assets/intestines.png);
+background-size: cover;
+    top: 95%;
+    left: 27%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableTwoFetus {
+background-image: url(../_assets/fetus.png);
+background-size: cover;
+    top: 82%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableTwoStomach {
+background-image: url(../_assets/stomach.png);
+background-size: cover;
+    top: 90%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    width: 140px;
+    height: 140px;
+}
+
+
+
+
+#draggableTwoKidneys {
+background-image: url(../_assets/kidneys.png);
+background-size: cover;
+    top: 92%;
+    left: 38%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableTwoEsophagus {
+background-image: url(../_assets/esophagus.png);
+background-size: cover;
+    top: 13%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    width: 130px;
+    height: 130px;
+}
+
+#draggableTwoPancreas {
+background-image: url(../_assets/pancreas.png);
+background-size: cover;
+    top: 95%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableTwoBladder {
+background-image: url(../_assets/bladder.png);
+background-size: cover;
+    top: 90%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+}
+
+#draggableTwoTesticles {
+background-image: url(../_assets/testicles.png);
+background-size: cover;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableTwoTongue {
+background-image: url(../_assets/tongue.png);
+background-size: cover;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+#draggableTwoVeins {
+background-image: url(../_assets/veins.png);
+background-size: cover;
+    top: 10%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    width: 140px;
+    height: 140px;
+}
+
+#draggableTwoArteries {
+background-image: url(../_assets/arteries.png);
+background-size: cover;
+    top: 40%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+}
+
+
+
+
+
+
+#draggableTwo {
+  background: #3498db;
+}
+
+#draggableThree {
+  background: #9b59b6;
+}
+
+#draggableFour {
+  background: #e67e22;
+}
+
+.message {
+  color: green;
+  transition: 2s;
+}
+
+.colorChange {
+  background: #9b59b6;
+  color: #9b59b6;
+  border: 2px solid #9b59b6;
+  transition: 2s;
+}
+
+.colorChangeGreen {
+  background: #2ecc71;
+  color: #2ecc71;
+  border: 2px solid #2ecc71;
+  transition: 2s;
+}
+
+.colorChangeBlue {
+  background: #3498db;
+  color: #3498db;
+  border: 2px solid #3498db;
+  transition: 2s;
+}
+
+.colorChangeOrange {
+  background: #e67e22;
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  transition: 2s;
+}
+
+.bounce {
+  animation-name: bounce;
+  -webkit-animation-name: bounce;
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%) scaleY(0.6);
+  }
+  60% {
+    transform: translateY(-100%) scaleY(1.1);
+  }
+  70% {
+    transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+  }
+  80% {
+    transform: translateY(0%) scaleY(1.05) scaleX(1);
+  }
+  90% {
+    transform: translateY(0%) scaleY(0.95) scaleX(1);
+  }
+  100% {
+    transform: translateY(0%) scaleY(1) scaleX(1);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0%) scaleY(0.6);
+  }
+  60% {
+    -webkit-transform: translateY(-100%) scaleY(1.1);
+  }
+  70% {
+    -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+  }
+  80% {
+    -webkit-transform: translateY(0%) scaleY(1.05) scaleX(1);
+  }
+  90% {
+    -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translateY(0%) scaleY(1) scaleX(1);
+  }
+}
+
+#back {
+background-image: url(../_assets/back.png);
+background-size: cover;
+position: fixed;
+    top: 7%;
+    left: 5%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+}
+
+.disappear {
+  display: none;
+}
+
+.bazang {
+  color: pink;
+  font-size: 6em;
+}
+
+.out-of-stock {
+  display: none;
+  width: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 24px;
+  line-height: 36px;
+}
