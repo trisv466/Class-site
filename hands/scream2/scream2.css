@@ -1,0 +1,347 @@
+/*Main ________________________________*/
+
+body {
+    background-color: #fed9c3;  
+    margin: 0px; /*(top, right, bottom, left) */
+    text-align: center;
+    padding-left: 50%;
+    position: fixed;
+    
+
+}
+
+/*#meter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}*/
+/*background gradient animation ________________________________*/
+
+/* The animation code taken and adapted from https://www.w3schools.com/css/css3_animations.asp*/
+@-webkit-keyframes colorAnim {
+    0%   {background: linear-gradient(white, #fed9c3);} /*pinky red*/
+    10%  {background: linear-gradient(#fed9c3, #ffae79);} /*dark purple*/
+    20%  {background: linear-gradient(#ffae79, #ff7f6a);}/*Navy*/
+    30%  {background: linear-gradient(#ffae79, #f0465a);} /*gray*/
+    40%  {background: linear-gradient(#b93240);} /*black*/
+    500% {background: linear-gradient(#b93240);} /*black*/
+    60%  {background: linear-gradient(#b93240);} /*black*/
+    70%  {background: linear-gradient(#ffae79, #f0465a);} /*gray*/
+    80%  {background: linear-gradient(#ffae79, #ff7f6a);}/*Navy*/
+    90%  {background: linear-gradient(#fed9c3, #ffae79);} /*dark purple*/
+    100%   {background: linear-gradient(white, #fed9c3);} /*pinky red*/
+}
+
+@keyframes colorAnim {
+    0%   {background: linear-gradient(white, #fed9c3);} /*pinky red*/
+    10%  {background: linear-gradient(#fed9c3, #ffae79);} /*dark purple*/
+    20%  {background: linear-gradient(#ffae79, #ff7f6a);}/*Navy*/
+    30%  {background: linear-gradient(#ffae79, #f0465a);} /*gray*/
+    40%  {background: linear-gradient(#b93240);} /*black*/
+    500% {background: linear-gradient(#b93240);} /*black*/
+    60%  {background: linear-gradient(#b93240);} /*black*/
+    70%  {background: linear-gradient(#ffae79, #f0465a);} /*gray*/
+    80%  {background: linear-gradient(#ffae79, #ff7f6a);}/*Navy*/
+    90%  {background: linear-gradient(#fed9c3, #ffae79);} /*dark purple*/
+    100%   {background: linear-gradient(white, #fed9c3);} /*pinky red*/
+}
+
+
+ .grad {
+    width: 300%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0%;
+/*    left: 50%;
+    transform: translate(-50%,-50%);*/
+    margin-bottom: 0px;
+    margin-left: -1500px;
+    bottom: 0;
+    left: 0;
+    z-index: 1 !important; /* bigger number = infront, smaller number= behind */
+
+    animation-name: colorAnim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: colorAnim;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: ease-in-out;
+
+} 
+
+/*Canvas ________________________________*/
+
+canvas {
+	margin: 0px 0px 0px -900px; /*(top, right, bottom, left) */
+    min-height: 100%;
+    min-width: 100%; 
+    z-index: 1;
+    position: absolute;
+    z-index: 4!important;   
+    opacity: 0.7;
+
+    }
+
+/*Tweets ________________________________*/
+
+.tweets-container {
+	z-index: 50;
+	position: absolute;
+    text-align: center;
+    margin: 0px;
+    width: 0px;
+	}
+
+.tweet-title {
+	font-size: 100px!important;
+    letter-spacing: 5px;
+}
+
+.tweet {
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.tweet-pic {
+
+    width: auto;
+    max-height: 800px;
+
+
+}
+
+/*Making them tweets look like proper twitter tweet things */
+
+ul {
+    margin: 0px;
+    position: absolute;
+    width: 0px;
+    z-index: 50;
+}
+
+li.a {
+    
+    width: 1400px;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    color:white;
+    position: absolute;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    opacity: 1;
+    margin: 80px 0px 0px -750px; /*(top, right, bottom, left) */
+    padding: 20px 30px 20px 30px; /*(top, right, bottom, left) */
+    
+    z-index: 50; /* bigger number = infront, smaller number= behind */
+    
+    
+/*Making them tweets move places using css3 transitions */
+
+    -webkit-animation-name: ; /* =move to activate Chrome, Safari, Opera */
+    -webkit-animation-duration: 30s;  /* Chrome, Safari, Opera */  /*How long it takes to move*/
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */ /* Forwards then backwards */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */ /* How many times it moves */
+  
+    animation-name: ; /* =move to activate */
+    animation-duration: 0s; /*How long it takes to move*/
+    animation-direction: alternate; /* Forwards then backwards */
+    animation-iteration-count: infinite; /* How many times it moves */
+    animation-timing-function: ease-in-out; /* smoothness of animation in and out */
+
+/*Making them tweets appear places using css3 transitions */
+
+    -webkit-animation-name: appear; /* =appear to activate Chrome, Safari, Opera */
+    -webkit-animation-duration: 20s;  /* Chrome, Safari, Opera */  /*How long it takes to appear*/
+    -webkit-animation-direction: normal; /* Chrome, Safari, Opera */ /* Forwards then backwards */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */ /* How many times it appear */
+    -webkit-animation-timing-function: ease-in-out; /* smoothness of animation in and out */
+  
+    animation-name: appear;/* =appear to activate */
+    animation-duration: 20s; /*How long it takes to move*/
+    animation-direction: normal; /* Forwards then backwards */
+    animation-iteration-count: infinite; /* How many times it appear */
+    animation-timing-function: ease-in-out; /* smoothness of animation in and out */
+}
+
+
+/*Tweets move all over the place, putting their arms in the air like they just don't care. Not really, they just move to these places */
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes move {
+    0%   {left:-1000px; top:40px;} /* left: 50%-(width*0.5); top: px;} for centre */
+    25%  {left:-1000px; top:40px;}
+    30%  {left: 50%; right:-250px; top:40px;}
+    50%  {left: 50%; right:-250px; top:40px;}
+    70%  {left: 50%; right:-250px; top:40px;}
+    75% {left:3000px; top:40px;}
+    100% {left:3000px; top:40px;}
+}
+
+/* Standard syntax */
+@keyframes move {
+    0%   {left:-1000px; top:40px;} /* left: 50%-(width*0.5); top: px;} for centre */
+    25%  {left:-1000px; top:40px;}
+    30%  {left: 50%; right:-250px; top:40px;}
+    50%  {left: 50%; right:-250px; top:40px;}
+    70%  {left: 50%; right:-250px; top:40px;}
+    75% {left:3000px; top:40px;}
+    100% {left:3000px; top:40px;}
+
+} 
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes appear {
+   
+    0%   {opacity: 0;} 
+    5%   {opacity: 0.9;} 
+    55%  {opacity: 0.9;} 
+    60%  {opacity: 0;} 
+    100% {opacity: 0;} 
+}
+
+/* Standard syntax */
+@keyframes appear {
+    0%   {opacity: 0;} 
+    5%   {opacity: 0.9;} 
+    55%  {opacity: 0.9;} 
+    60%  {opacity: 0;} 
+    100% {opacity: 0;} 
+
+} 
+
+
+#helpicon {
+    width: 70px;
+    height: 70px;
+    background-image: url(helpicon.png);
+    background-size: contain;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 5%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    z-index: 50;
+}
+
+#backicon {
+    width: 70px;
+    height: 70px;
+    background-image: url(backicon.png);
+    background-size: contain;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    z-index: 50;
+}
+
+
+.blackfade {
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 200;
+
+}
+
+.transformblack {
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+
+.transformblack-active {
+        /*background-color: rgba(0, 0, 0, 0.3);*/
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 20%, rgba(230,64,81,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e64051',GradientType=0 ); /* IE6-9 */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 200;
+}
+
+.box {
+    width: 80%;
+    height: 60%;
+    background-color: white;
+    border-radius: 60px;
+    position: fixed;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1.0;
+    z-index: 2147483647;
+}
+
+
+
+.transform {
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+
+.transform-active {
+
+        width: 80%;
+    height: 60%;
+    background-color: white;
+    border-radius: 60px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1.0;
+    z-index: 2147483647;
+}
+  
+#poptext {
+    position: fixed;
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
+    color: #3e3e3e;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    opacity: 1.0;
+}
+
+#icon {
+    width: 200px;
+    height: 200px;
+    background-image: url(clenchedfisticon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 23%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    opacity: 1.0;
+}
+

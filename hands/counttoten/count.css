@@ -1,0 +1,486 @@
+body {
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+
+#helpicon {
+  width: 70px;
+  height: 70px;
+  background-image: url(helpicon.png);
+  background-size: contain;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: -135%;
+  left: 100%;
+  transform: translate(-50%,-50%);
+}
+
+#backicon {
+  width: 70px;
+  height: 70px;
+  background-image: url(backicon.png);
+  background-size: contain;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: -135%;
+  left: 0%;
+  transform: translate(-50%,-50%);
+}
+
+
+.blackfade {
+  background-color: rgba(0, 0, 0, 0.0);
+  width: 1000px;
+  height: 2500px;
+  position: fixed;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.transformblack {
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+
+.transformblack-active {
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 20%, rgba(230,64,81,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e64051',GradientType=0 ); /* IE6-9 */
+  width: 1000px;
+  height: 2500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.box2 {
+  width: 800px;
+  height: 900px;
+  background-color: white;
+  border-radius: 60px;
+  position: fixed;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 1.0;
+}
+
+
+
+.transform {
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+
+.transform-active {
+
+  width: 800px;
+  height: 900px;
+  background-color: white;
+  border-radius: 60px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 1.0;
+}
+  
+#poptext {
+  position: fixed;
+  top: 65%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  font-size: 60px;
+  color: #3e3e3e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  opacity: 1.0;
+}
+
+#icon {
+  width: 200px;
+  height: 200px;
+  background-image: url(timericon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%,-50%);
+  opacity: 1.0;
+}
+
+
+#close {
+  display: block;
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 40px;
+  background-color: #ff9a6b;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#close2 {
+  display: block;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 40px;
+  background-color: #fe5668;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#pop {
+  width: 800px;
+  height: 900px;
+  background-color: white;
+  border-radius: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 1.0;
+/*    box-shadow: 5px 5px 20px #c4c4c4;*/
+    animation-name: stillmad;
+    animation-duration: 600s;
+    animation-delay: 20s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+@keyframes stillmad {
+  0.5% {
+    opacity: 1.0;
+  }
+}
+
+
+#instructions {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  line-height: 70px;
+  transform: translate(-50%,-50%);
+  font-size: 70px;
+  color: #3e3e3e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+   
+   }
+
+.numbers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 130px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+#one {
+  color: transparent;
+  animation-name: ones;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes ones {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #fe5668;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+#two {
+  color: transparent;
+  animation-name: twos;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes twos {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #fe5668;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+#three {
+  color: transparent;
+  animation-name: threes;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes threes {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #fe5668;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+#four {
+  color: transparent;
+  animation-name: fours;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fours {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #fe5668;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+#five {
+  color: transparent;
+  animation-name: fives;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fives {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #fe5668;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+#six {
+  color: transparent;
+  animation-name: sixs;
+  animation-duration: 2s;
+  animation-delay: 10s;
+  animation-iteration-count: 1;
+}
+
+@keyframes sixs {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #fe5668;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+#seven {
+  color: transparent;
+  animation-name: sevens;
+  animation-duration: 2s;
+  animation-delay: 12s;
+  animation-iteration-count: 1;
+}
+
+@keyframes sevens {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #fe5668;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+#eight {
+  color: transparent;
+  animation-name: eights;
+  animation-duration: 2s;
+  animation-delay: 14s;
+  animation-iteration-count: 1;
+}
+
+@keyframes eights {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #fe5668;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+#nine {
+  color: transparent;
+  animation-name: nines;
+  animation-duration: 2s;
+  animation-delay: 16s;
+  animation-iteration-count: 1;
+}
+
+@keyframes nines {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #fe5668;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+#ten {
+  color: transparent;
+  animation-name: tens;
+  animation-duration: 2s;
+  animation-delay: 18s;
+  animation-iteration-count: 1;
+}
+
+@keyframes tens {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #fe5668;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: auto;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  background: transparent;
+  text-align: center;
+/*  box-shadow: 3px 3px 30px black;*/
+}
+
+h1 {
+  padding-top: 20px;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.spinner {
+  border-radius: 50%;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-color: white;
+}
+
+.spinnerOne::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: -30px;
+  left: -30px;
+  height: 400px;
+  width: 400px;
+  border: 30px solid #fed9c3;
+  border-top-color: #fed9c3;
+  animation: spinneroneani 20s linear infinite;
+}
+
+@keyframes spinneroneani {
+  25% {
+    border-top-color: #fed9c3;
+    border-right-color: #ffbe90;
+    border-bottom-color: #ff846a;
+    border-left-color: #e84253;
+  }
+  50% {
+    border-top-color: #ff846a;
+    border-right-color: #e84253;
+    border-bottom-color: #fed9c3;
+    border-left-color: #ffbe90;
+    transform: rotate(180deg) scale(1.2);
+  }
+  75% {
+    border-top-color: #fed9c3;
+    border-right-color: #ffbe90;
+    border-bottom-color: #ff846a;
+    border-left-color: #e84253;
+  }
+  100% {
+    border-top-color: #ff846a;
+    border-right-color: #e84253;
+    border-bottom-color: #fed9c3;
+    border-left-color: #ffbe90;
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+

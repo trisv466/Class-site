@@ -1,5 +1,112 @@
+.loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 200px;
+	height: 200px;
+	animation-name: loading;
+	animation-iteration-count: 1;
+	animation-duration: 5s;
+}
+
+@keyframes loading {
+	0% {
+		background-image: url(l1.png);
+		background-size: cover;
+			position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	}
+		25% {
+		background-image: url(l2.png);
+		background-size: cover;
+			position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	}
+		50% {
+		background-image: url(l3.png);
+		background-size: cover;
+			position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	}
+		75% {
+		background-image: url(l4.png);
+		background-size: cover;
+			position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	}
+		99% {
+		background-image: url(l5.png);
+		background-size: cover;
+			position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	}
+			100% {
+		background-image: url(l5.png);
+		background-size: cover;
+			position: fixed;
+	top: 300%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
+	}
+}
+
+
+#loadbg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	animation-name: loadingbg;
+	animation-iteration-count: 1;
+	animation-duration: 5s;
+}
+
+@keyframes loadingbg {
+	0% {
+		background-color: #f5f4f4;
+			position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	}
+	99% {
+		background-color: #f5f4f4;
+			position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	}
+
+		100% {
+		background-color: #f5f4f4;
+	position: fixed;
+	top: 300%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
+	}
+}
+
+
+
+
+
 #madlist {
-	width: 80%;
+	width: 100%;
 	height: 100%;
 	background-image: url(gradientbg.jpg);
 	background-size: cover;
@@ -8,7 +115,7 @@
 	top: 75%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	border-radius: 70px;
+/*	border-radius: 70px;*/
 }
 
 #listtext {
@@ -21,6 +128,7 @@
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	text-align: center;
+	text-decoration: none;
 }
 
 #mad-icon {

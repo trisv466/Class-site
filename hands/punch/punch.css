@@ -1,0 +1,209 @@
+body {
+    font-size: 20px;
+    line-height: 1.4;
+    color: rgba(255,255,255,0.8);
+    /* background: #1d1f20; */
+}
+
+.box {
+    /* background-color: #218D9B; */
+    background-image: url(punchingbag.jpg);
+    background-size: cover;
+    height: 1500px;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.transform {
+    animation-name: forwardone;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes forwardone {
+    0% {
+    background-image: url(punchingbag.jpg);
+    background-size: cover;
+    height: 1500px;
+    width: 1000px;
+}
+50% {
+    background-image: url(punchbag4.gif);
+    background-size: cover;
+    height: 1500px;
+    width: 1000px;
+}
+100% {
+    background-image: url(punchingbag.jpg);
+    background-size: cover;
+    height: 1500px;
+    width: 1000px;
+}
+}
+
+.transform-active {
+    animation-name: forward;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes forward {
+    0% {
+    background-image: url(punchingbag.jpg);
+    background-size: cover;
+    height: 1500px;
+    width: 1000px;
+}
+50% {
+    background-image: url(punchbag4.gif);
+    background-size: cover;
+    height: 1500px;
+    width: 1000px;
+}
+100% {
+    background-image: url(punchingbag.jpg);
+    background-size: cover;
+    height: 1500px;
+    width: 1000px;
+}
+
+#a {
+color: red;
+}
+
+.fist {
+    /* background-color: #218D9B; */
+    background-image: url(fist.png);
+    background-size: cover;
+    height: 706px;
+    width: 314px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.transformtwo {
+    animation-name: forwardtwo;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes forwardtwo {
+    0% {
+    background-image: url(fist.png);
+    background-size: cover;
+    height: 706px;
+    width: 314px;
+}
+50% {
+    background-image: url(fist.png);
+    background-size: cover;
+    height: 706px;
+    width: 314px;
+}
+100% {
+    background-image: url(fist.png);
+    background-size: cover;
+    height: 706px;
+    width: 314px;
+}
+}
+
+.transformtwo-active {
+    animation-name: forwardthree;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes forwardthree {
+    0% {
+    background-image: url(fist.png);
+    background-size: cover;
+    height: 706px;
+    width: 314px;
+}
+50% {
+    background-image: url(fist.png);
+    background-size: cover;
+    height: 706px;
+    width: 314px;
+}
+100% {
+    background-image: url(fist.png);
+    background-size: cover;
+    height: 706px;
+    width: 314px;
+}
+
+
+#button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    height: 110px;
+    width: auto;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 40px;
+    border-width: 7px;
+}
+
+#a {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    height: 110px;
+    width: auto;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 40px;
+    border-width: 7px;
+}
+.file-upload-native {
+    z-index: 15;
+    opacity: 0;
+}
+.file-upload-native, .file-upload-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+.preview {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 0px 2px rgba(33, 122, 105, 1);
+    border-radius: 50%;
+    background-color: white;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    overflow: hidden;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+}
