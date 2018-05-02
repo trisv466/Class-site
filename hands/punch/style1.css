@@ -1,12 +1,15 @@
 body {
   overflow: hidden;
+  background-image: url(gradientbg.jpg);
+  background-size: 150% auto;
+  background-repeat: no-repeat;
 }
 
 .box {
 /*  background-color: #218D9B;*/
   height: 1500px;
   width: 1000px;
-  background-image: url(http://i67.tinypic.com/vgjyah.jpg);
+  background-image: url(punchingbag.png);
   background-size: cover;
 }
 
@@ -20,19 +23,19 @@ body {
   0% {
   height: 1500px;
   width: 1000px;
-  background-image: url(http://i67.tinypic.com/vgjyah.jpg);
+  background-image: url(punchingbag.png);
   background-size: cover;
   }
 50% {
   height: 1500px;
   width: 1000px;
-  background-image: url(http://i63.tinypic.com/5xpzrb.gif);
+  background-image: url(punchbag4.gif);
   background-size: cover;
   }
   100% {
   height: 1500px;
   width: 1000px;
-  background-image: url(http://i67.tinypic.com/vgjyah.jpg);
+  background-image: url(punchingbag.png);
   background-size: cover;
   }
 }
@@ -48,19 +51,19 @@ body {
   0% {
   height: 1500px;
   width: 1000px;
-  background-image: url(http://i67.tinypic.com/vgjyah.jpg);
+  background-image: url(punchingbag.png);
   background-size: cover;
   }
 50% {
   height: 1500px;
   width: 1000px;
-  background-image: url(http://i63.tinypic.com/5xpzrb.gif);
+  background-image: url(punchbag4.gif);
   background-size: cover;
   }
   100% {
   height: 1500px;
   width: 1000px;
-  background-image: url(http://i67.tinypic.com/vgjyah.jpg);
+  background-image: url(punchingbag.png);
   background-size: cover;
   }
 }
@@ -171,7 +174,7 @@ body {
   font-size: 50px;
     font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  background-color: #ff756a;
+  background-color: white;
   color: #3f3f3f;
   padding: 20px;
   padding-left: 30px;
@@ -190,9 +193,9 @@ body {
 /*    box-shadow: 0px 0px 0px 2px rgba(33, 122, 105, 1);*/
     border-radius: 50%;
     overflow: hidden;
-    background-color: #3f3f3f;
+    background-color: #262626;
     border-style: solid;
-    border-color: white;
+    border-color: transparent;
     border-width: 20px;
     position: absolute;
     top: 50%;
@@ -201,14 +204,15 @@ body {
 }
 
 .file-upload-wrapper {
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    transform: translate3d(-50%,-50%);
+    position: fixed;
+  top: 80%;
+  left: -10%;
+  transform: translate(-50%,-50%);
+    position: relative;
     z-index: 5;
     display: block;
-    width: 100px;
-    height: 70px;
+    width: 250px;
+    height: 30px;
     margin: 25px auto;
     border-radius: 0px;
     border-bottom: 1px dashed rgba(33, 122, 105, 1);
@@ -217,13 +221,13 @@ body {
 .file-upload-native,
 .file-upload-text {
     position: absolute;
-    top: 80%;
-    left: 30%;
-    transform: translate(-50%,-50%);
-    font-size: 30px;
+    top: 0;
+    left: 0;
     display: block;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
-    color: #ff756a;
+    color: rgba(255,255,255,0.8);
 }
 
 input[type="file"]::-webkit-file-upload-button {
@@ -237,23 +241,161 @@ input[type="file"]::-webkit-file-upload-button {
 
 .file-upload-text {
     z-index: 10;
+    width: 100px;
+    height: 100px;
     padding: 5px 15px 8px;
     overflow: hidden;
     font-size: 30px;
-      font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
     line-height: 1.4;
     cursor: pointer;
     text-align: center;
     letter-spacing: 1px;
     text-overflow: ellipsis;
     border: 0;
-    color: #ff756a;
-/*    background-color: #ff756a;*/
+    background-color: transparent;
+    background-image: url(uploadimageicon.png);
+    background-size: cover;
 }
 
 .file-upload-native {
     z-index: 15;
     opacity: 0;
+}
+
+
+
+
+
+
+
+
+#helpicon {
+  width: 70px;
+  height: 70px;
+  background-image: url(helpicon.png);
+  background-size: contain;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 5%;
+  left: 90%;
+  transform: translate(-50%,-50%);
+  z-index: 40;
+}
+
+#backicon {
+  width: 70px;
+  height: 70px;
+  background-image: url(backicon.png);
+  background-size: contain;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  transform: translate(-50%,-50%);
+  z-index: 40;
+}
+
+
+.blackfade {
+
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 20%, rgba(230,64,81,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e64051',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 25;
 
 }
+
+.transformblack {
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+
+.transformblack-active {
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+  background-color: rgba(0, 0, 0, 0.0);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 25;
+}
+
+.boxtwo {
+    width: 80%;
+  height: 60%;
+  background-color: white;
+  border-radius: 60px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 1.0;
+  z-index: 30;
+}
+
+
+
+.transformthree {
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+
+.transformthree-active {
+
+    width: 80%;
+  height: 60%;
+  background-color: white;
+  border-radius: 60px;
+  position: fixed;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 1.0;
+  z-index: 30;
+
+
+}
+  
+#poptext {
+  position: fixed;
+  top: 65%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  font-size: 60px;
+  color: #3e3e3e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  opacity: 1.0;
+}
+
+#icon {
+  width: 200px;
+  height: 200px;
+  background-image: url(punchingbagicon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 23%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  opacity: 1.0;
+}
+

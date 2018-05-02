@@ -70,6 +70,7 @@
 	transform: translate(-50%,-50%);
 	width: 100%;
 	height: 100%;
+	z-index: 10;
 	animation-name: loadingbg;
 	animation-iteration-count: 1;
 	animation-duration: 5s;
@@ -82,6 +83,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	z-index: 10;
 	}
 	99% {
 		background-color: #f5f4f4;
@@ -89,6 +91,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	z-index: 10;
 	}
 
 		100% {
@@ -97,6 +100,7 @@
 	top: 300%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	z-index: 10;
 	display: none;
 	}
 }
@@ -112,15 +116,16 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: fixed;
-	top: 75%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	z-index: 5;
 /*	border-radius: 70px;*/
 }
 
 #listtext {
 	position: fixed;
-	top: 35%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	font-size: 40px;
@@ -129,6 +134,7 @@
 	font-weight: 400;
 	text-align: center;
 	text-decoration: none;
+	z-index: 20;
 }
 
 #mad-icon {
@@ -153,5 +159,7 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	color: #494949;
+	text-transform: uppercase;
 	text-align: center;
+	z-index: 10;
 }

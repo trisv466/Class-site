@@ -12,27 +12,29 @@ body {
 }
 
 .hand {
-	width: 70%;
-	height: 100%;
+	width: 100%;
+	height: 50%;
 /*	background-image: url(fingers.png);
 	background-size: contain;
 	background-repeat: no-repeat;*/
 /*	background-color: yellow;*/
 	position: fixed;
-	top: 65%;
-	left: 14%;
+	top: 75%;
+	left: 50%;
 	transform: translate(-50%,-50%);
+/*	transform: rotate(-135deg);*/
 }
 
 #righthand {
-	width: 70%;
-	height: 100%;
+	width: 100%;
+	height: 50%;
 	position: fixed;
-	top: 15%;
-	left: 50%;
+	top: 0%;
+	left: 0%;
 	transform: translate(-50%,-50%);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+/*    background-color: blue;*/
+     -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
 }
 
 .close {
@@ -88,36 +90,37 @@ body {
 	width: 350px;
 	height: 350px;
 	position: fixed;
-	top: 67%;
-	left: 30%;
+	top: 75%;
+	left: 80%;
 	transform: translate(-50%,-50%);
+
 } 
 
 #two {
 	position: fixed;
-	top: 50%;
-	left: 60%;
+	top: 20%;
+	left: 85%;
 	transform: translate(-50%,-50%);
 }
 
 #three {
 	position: fixed;
-	top: 33%;
-	left: 80%;
+	top: 30%;
+	left: 53%;
 	transform: translate(-50%,-50%);
 }
 
 #four {
 	position: fixed;
-	top: 17%;
-	left: 60%;
+	top: 50%;
+	left: 25%;
 	transform: translate(-50%,-50%);
 }
 
 #five {
 	position: fixed;
-	top: 5%;
-	left: 27%;
+	top: 80%;
+	left: 10%;
 	transform: translate(-50%,-50%);
 }
 
@@ -150,11 +153,15 @@ body {
 
 
 .blackfade {
-	background-color: rgba(0, 0, 0, 0.0);
+		/*background-color: rgba(0, 0, 0, 0.3);*/
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 20%, rgba(230,64,81,0.6) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e64051',GradientType=0 ); /* IE6-9 */
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	top: 150%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 
@@ -169,15 +176,12 @@ body {
 }
 
 .transformblack-active {
-		/*background-color: rgba(0, 0, 0, 0.3);*/
-background: -moz-linear-gradient(top, rgba(255,255,255,0) 20%, rgba(230,64,81,0.6) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e64051',GradientType=0 ); /* IE6-9 */
+
+	background-color: rgba(0, 0, 0, 0.0);
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	top: 50%;
+	top: 150%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
@@ -188,7 +192,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	background-color: white;
 	border-radius: 60px;
 	position: fixed;
-	top: 150%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	opacity: 1.0;
@@ -205,13 +209,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 
 .transform-active {
-
-		width: 80%;
+	width: 80%;
 	height: 60%;
 	background-color: white;
 	border-radius: 60px;
 	position: fixed;
-	top: 50%;
+	top: 150%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	opacity: 1.0;

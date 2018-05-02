@@ -12,9 +12,19 @@ $("#button").click(function() {
 });
 
 
+$("#helpicon").click(function() {
+  $('.transformthree-active').toggleClass('transformthree-active');
+});
 
+$("#helpicon").click(function() {
+  $('.transformblack').toggleClass('transformblack-active');
+});
 
-
+// $(document).ready(function(){
+//     $("helpicon").click(function(){
+//         $(".transformthree").toggleClass("transformthree-active");
+//     });
+// });
 
 
 
