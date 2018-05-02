@@ -34,14 +34,18 @@ body {
 
 
 .blackfade {
-  background-color: rgba(0, 0, 0, 0.0);
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 20%, rgba(230,64,81,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(230,64,81,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e64051',GradientType=0 ); /* IE6-9 */
   width: 1000px;
   height: 2500px;
   position: fixed;
-  top: 200%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 30;
+  opacity: 0;
 
 }
 
@@ -66,6 +70,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 30;
+  opacity: 1;
 }
 
 .box2 {
@@ -74,10 +79,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   background-color: white;
   border-radius: 60px;
   position: fixed;
-  top: 250%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  opacity: 1.0;
+  opacity: 0;
   z-index: 70;
 }
 
@@ -112,6 +117,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   transform: translate(-50%,-50%);
   font-size: 60px;
   color: #3e3e3e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  opacity: 1.0;
+}
+
+#byebye {
+  position: fixed;
+  top: -110%;
+  left: 127%;
+  transform: translate(-50%,-50%);
+  font-size: 60px;
+  color: #ff8171;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-align: left;

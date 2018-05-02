@@ -123,30 +123,122 @@
 /*	border-radius: 70px;*/
 }
 
-#listtext {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	font-size: 40px;
+.listtext {
+		font-size: 45px;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	text-align: center;
 	text-decoration: none;
-	z-index: 20;
 }
 
-#mad-icon {
-	width: 120px;
-	height: 120px;
-	background-image: url(mad-icon.png);
-	background-size: cover;
-	background-repeat: no-repeat;
+#irritated {
 	position: fixed;
-	top: 70%;
+	top: 25%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	z-index: 20;
+	opacity: 0;
+	animation-name: irritated;
+	animation-iteration-count: 1;
+	animation-duration: 600s;
+}
+
+@keyframes irritated {
+	0% {
+	opacity: 0;
+	}
+	0.3% {
+	opacity: 1.0;
+	}
+}
+
+#frustrated {
+	position: fixed;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 20;
+	opacity: 0;
+	animation-name: frustrated;
+	animation-iteration-count: 1;
+	animation-duration: 600s;
+	animation-delay: 0.3s;
+}
+
+@keyframes frustrated {
+		0% {
+	opacity: 0;
+	}
+	0.3% {
+	opacity: 1.0;
+	}
+}
+
+#mad {
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 20;
+	opacity: 0;
+	animation-name: mad;
+	animation-iteration-count: 1;
+	animation-duration: 600s;
+	animation-delay: 0.6s;
+}
+
+@keyframes mad {
+		0% {
+	opacity: 0;
+	}
+	0.3% {
+	opacity: 1.0;
+	}
+}
+
+#furious {
+	position: fixed;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 20;
+	opacity: 0;
+	animation-name: furious;
+	animation-iteration-count: 1;
+	animation-duration: 600s;
+	animation-delay: 0.9s;
+}
+
+@keyframes furious {
+		0% {
+	opacity: 0;
+	}
+	0.3% {
+	opacity: 1.0;
+	}
+}
+
+#warning {
+	position: fixed;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	z-index: 20;
+	animation-name: warning;
+	animation-iteration-count: 1;
+	animation-duration: 600s;
+	animation-delay: 1.2s;
+}
+
+@keyframes warning {
+		0% {
+	opacity: 0;
+	}
+	0.3% {
+	opacity: 1.0;
+	}
 }
 
 h1 {
@@ -158,8 +250,31 @@ h1 {
 	font-size: 60px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	color: #494949;
+	color: black;
 	text-transform: uppercase;
 	text-align: center;
 	z-index: 10;
+	opacity: 0;
+	animation-name: title;
+	animation-iteration-count: 1;
+	animation-duration: 600s;
+}
+
+@keyframes title {
+	0% {
+	width: 80%;
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	}
+	0.5% {
+	width: 80%;
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 1.0;
+	}
 }

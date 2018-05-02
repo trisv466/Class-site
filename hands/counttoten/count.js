@@ -7,3 +7,11 @@ $("#helpicon").click(function() {
 $("#helpicon").click(function() {
   $('.transformblack').toggleClass('transformblack-active');
 });
+
+$("#byebye").click(function() {
+  $('.transform').toggleClass('transform-active');
+});
+
+$("#byebye").click(function() {
+  $('.transformblack').toggleClass('transformblack-active');
+});
