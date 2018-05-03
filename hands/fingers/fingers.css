@@ -266,7 +266,7 @@ body {
 
 #byebye {
   position: fixed;
-  top: -50%;
+  top: -40%;
   left: 127%;
   transform: translate(-50%,-50%);
   font-size: 60px;
@@ -278,8 +278,8 @@ body {
 }
 
 #icon {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	background-image: url(clenchedfisticon.png);
 	background-size: contain;
 	background-repeat: no-repeat;
