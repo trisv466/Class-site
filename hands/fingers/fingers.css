@@ -266,7 +266,7 @@ body {
 
 #byebye {
   position: fixed;
-  top: -80%;
+  top: -50%;
   left: 127%;
   transform: translate(-50%,-50%);
   font-size: 60px;

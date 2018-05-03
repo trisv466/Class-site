@@ -125,7 +125,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 #byebye {
   position: fixed;
-  top: -110%;
+  top: -80%;
   left: 127%;
   transform: translate(-50%,-50%);
   font-size: 60px;

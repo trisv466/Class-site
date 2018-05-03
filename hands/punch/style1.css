@@ -340,7 +340,7 @@ input[type="file"]::-webkit-file-upload-button {
 
 .boxtwo {
     width: 80%;
-  height: 60%;
+  height: 50%;
   background-color: white;
   border-radius: 60px;
   position: fixed;
@@ -411,7 +411,7 @@ input[type="file"]::-webkit-file-upload-button {
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  top: 23%;
+  top: 30%;
   left: 20%;
   transform: translate(-50%,-50%);
   opacity: 1.0;
