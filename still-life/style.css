@@ -151,6 +151,53 @@ body {
 	transform: rotate(30deg);	
 }
 
+
+
+#bottomorange {
+	width: 130px;
+	height: 130px;
+	background: #ff9f49;
+	-moz-border-radius: 65px;
+	-webkit-border-radius: 65px;
+	border-radius: 65px;
+	top: 85%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    z-index: 5;		
+}
+
+#bottomorangeleaf {
+  width: 60px; height: 60px;
+  background-color: #A0DE21; 
+  -moz-border-radius: 60px 0px;
+  -webkit-border-radius: 60px 0px;
+  border-radius: 60px 0px;
+	top: 75%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    position: absolute;	
+      transform: rotate(65deg);
+     z-index: 5;	
+}
+
+#bottomorangestem {
+	width: 7px;
+	height: 30px;
+	border-radius: 5px;
+ 	background-color: #A0DE21; 
+	top: 74%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    position: absolute;	
+    transform: rotate(30deg);	
+     z-index: 5;	
+}
+
+
+
+
+
 #keyboard {
 	border-bottom: 100px solid #e3d5b6;
 	border-left: 50px solid transparent;
@@ -162,6 +209,70 @@ body {
 	left: 50%;
 	transform: translate(-50%,-50%);
 	position: absolute;
+}
+
+.key1 {
+    height: 100px;
+    width: 10px;
+    background: #3f3f3f;
+    border-radius: 30px;
+    position: fixed;
+	top: 30%;
+	left: 47%;
+	transform: translate(-50%,-50%);
+	z-index: 50;
+	transform: rotate(45deg);
+}
+
+
+.key2 {
+    height: 75px;
+    width: 10px;
+    background: #3f3f3f;
+    border-radius: 30px;
+    position: fixed;
+	top: 35%;
+	left: 49%;
+	transform: translate(-50%,-50%);
+	z-index: 50;
+	transform: rotate(45deg);
+}
+
+
+.key3 {
+    width: 300px;
+    height: 10px;
+    background: #cec0a3;
+    border-radius: 30px;
+    position: fixed;
+	top: 74%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 2;
+}
+
+.key4 {
+    width: 350px;
+    height: 10px;
+    background: #cec0a3;
+    border-radius: 30px;
+    position: fixed;
+	top: 77%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 2;
+}
+
+.key5 {
+    width: 400px;
+    height: 10px;
+    background: #cec0a3;
+    border-radius: 30px;
+    position: fixed;
+	top: 78%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 2;
 }
 
 #keyboard2 {
@@ -197,16 +308,81 @@ body {
     left: 30%;
     transform: translate(-50%,-50%);
     position: absolute;	
+    z-index: 3;
 
   }
 
   #ballshadow {
-  background-color: #222;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 4px solid #222;
-  /* I set 2 shadows where the first one doesn't have blur and spread for firefox fix. */
-  box-shadow: inset 0px 16px #999, inset 0px 16px 1px 1px #999;
-  -moz-box-shadow: inset 0px 16px #999, inset 0px 16px 1px 1px #999;
+  	width: 300px;
+	height: 300px;
+	background: #a5a5a5;
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+	border-radius: 150px;
+	top: 71%;
+    left: 29%;
+    transform: translate(-50%,-50%);
+    position: absolute;	
   }
+
+
+  .bottle {
+    width: 110px;
+    height: 180px;
+    background: #ffe3cc;
+    border-radius: 30px;
+    top: 480px;
+    left: 940px;
+    position: absolute;
+}
+
+
+  .bottleshadow {
+    height: 130px;
+    width: 15px;
+    background: #fffaf7;
+    border-radius: 30px;
+    top: 500px;
+    left: 1010px;
+    position: absolute;
+}
+
+  .bottleshadowtwo {
+    height: 15px;
+    width: 15px;
+    background: #fffaf7;
+    border-radius: 30px;
+    top: 650px;
+    left: 1010px;
+    position: absolute;
+}
+
+.bottlebottom {
+    width: 110px;
+    height: 90px;
+    background: #ffe3cc;
+    border-radius: 5px;
+    top: 630px;
+    left: 940px;
+    position: absolute;
+}
+
+.cork {
+    width: 35px;
+    height: 40px;
+    background: #b75942;
+    border-radius: 10px;
+    top: 425px;
+    left: 978px;
+    position: absolute;
+}
+
+.bottletop {
+    width: 50px;
+    height: 50px;
+    background: #ffe3cc;
+    border-radius: 10px;
+    top: 440px;
+    left: 970px;
+    position: absolute;
+}
